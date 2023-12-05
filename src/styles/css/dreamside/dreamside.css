@@ -29,6 +29,7 @@ header {
     .beats .beats__content a {
       text-decoration: none; }
     .beats .beats__content .beat {
+      margin: 0;
       display: flex;
       flex-direction: column;
       height: 26rem;

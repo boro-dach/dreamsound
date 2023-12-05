@@ -8,7 +8,7 @@ export default function BeatPage(props){
     return(
     <div className="beatpage">
         <Header text="@dreamside"/>
-        <div className="beat">
+        <div className="beatpage_content">
             <div className="beat_text">
                 <h1 className="beatname">{props.beatname}</h1>
                 <p className="by">by:</p>
@@ -25,7 +25,7 @@ export default function BeatPage(props){
                         <p className="buy__inner">wav leasing</p><p className="var__price">{props.price_wav}₽</p>
                     </Link>
                     <Link className="buy__var" to="/">
-                        <p className="buy__inner">exclusive</p><p className="var__price">{props.price_exc}₽</p>
+                        <p className="buy__inner">exclusive</p><p className="var__price">{props.price_}₽</p>
                     </Link>    
                 </div> 
             </div>
