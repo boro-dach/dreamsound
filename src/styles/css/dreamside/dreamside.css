@@ -43,10 +43,6 @@ header {
         width: 14rem;
         height: 14rem;
         border-radius: 10px; }
-        @media (max-width: 1600px) {
-          .beats .beats__content .beat img {
-            width: 12rem;
-            height: 12rem; } }
       .beats .beats__content .beat .beat__text {
         text-align: center;
         margin-top: 1rem;
@@ -56,9 +52,6 @@ header {
         font-size: 1.25rem; }
         .beats .beats__content .beat .beat__text .beat__text__name {
           font-weight: 700; }
-          @media (max-width: 1600px) {
-            .beats .beats__content .beat .beat__text .beat__text__name {
-              font-size: 1rem; } }
         .beats .beats__content .beat .beat__text .beat__text__author {
           color: #767676;
           margin-top: 2.5rem;

@@ -4,17 +4,20 @@ import Dreamside from './pages/Dreamside/Dreamside'
 import NotFound from './pages/NotFound'
 import DreamsideBeats from './pages/Dreamside/DreamsideBeats'
 import DreamsideKits from './pages/Dreamside/DreamsideKits'
-
+import BeatPage from './components/BeatPage'
 import './styles/css/app.css'
 
 function App() {
   return (
     <Routes>
-      <Route path='/' element={<Homepage/>} />
-      <Route path='/dreamside' element={<Dreamside/>} />
+      <Route path='/' element={<Homepage/>}/>
+      {/* dreamside */}
+      <Route path='/dreamside' element={<Dreamside/>}/>
       <Route path='/dreamside/beats' element={<DreamsideBeats/>}/>
       <Route path='/dreamside/soundkits' element={<DreamsideKits/>} />
-      <Route path='*' element={<NotFound/>} />
+      {/* dreamside beats */}
+      <Route path='/dreamside/violence' element={<BeatPage beatname="violence" main_author="@testinexxx" add_author1="@aquamolly" add_author2="@dawgy" add_author3="@iceplugg" price_mp3="500" price_wav="1000" price_exc="2000"/>} />
+      <Route path='*' element={<NotFound/>}/>
     </Routes>
   )
 }
