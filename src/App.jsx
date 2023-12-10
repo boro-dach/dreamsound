@@ -6,13 +6,23 @@ import DreamsideBeats from './pages/Dreamside/DreamsideBeats'
 import DreamsideKits from './pages/Dreamside/DreamsideKits'
 import BeatPage from './components/BeatPage'
 import './styles/css/app.css'
+import { Login } from './pages/Login'
+import Register from './pages/Register'
+import { RequireAuth } from './components/hoc/RequireAuth'
+
 
 function App() {
   return (
     <Routes>
       <Route path='/' element={<Homepage/>}/>
+      <Route path='login' element={<Login/>}/>
+      <Route path='register' element={<Register/>} />
       {/* dreamside */}
-      <Route path='/dreamside' element={<Dreamside/>}/>
+      <Route path='/dreamside' element={
+        <RequireAuth>
+          <Dreamside />
+        </RequireAuth>
+      } />
       <Route path='/dreamside/beats' element={<DreamsideBeats/>}/>
       <Route path='/dreamside/soundkits' element={<DreamsideKits/>} />
       {/* dreamside beats */}
